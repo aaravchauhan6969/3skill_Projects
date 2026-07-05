@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <h1>Tic Tac Toe</h1>
+        <p class="subtitle">Challenge your friend and have fun!</p>
+
+        <!-- Score Board -->
+        <div class="score-board">
+
+            <div class="score-card">
+                <h3>Player X</h3>
+                <span id="scoreX">0</span>
+            </div>
+
+            <div class="score-card">
+                <h3>Draw</h3>
+                <span id="drawScore">0</span>
+            </div>
+
+            <div class="score-card">
+                <h3>Player O</h3>
+                <span id="scoreO">0</span>
+            </div>
+
+        </div>
+
+        <!-- Turn Indicator -->
+        <div class="turn-box">
+            <h2 id="turn">Player X's Turn</h2>
+        </div>
+
+        <!-- Game Board -->
+        <div class="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+        <!-- Result -->
+        <div class="result">
+            <h2 id="resultText"></h2>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button id="restartBtn">
+                Restart
+            </button>
+
+            <button id="newGameBtn">
+                New Match
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
