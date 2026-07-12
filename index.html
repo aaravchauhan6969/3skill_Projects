@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Frontend Quiz</h1>
+
+            <div class="score-box">
+                Score :
+                <span id="score">0</span>
+            </div>
+        </div>
+
+        <!-- Quiz Card -->
+        <div class="quiz-card">
+
+            <div class="question-number">
+                Question <span id="questionNo">1</span> / <span id="totalQuestion">10</span>
+            </div>
+
+            <h2 id="question">
+                Loading...
+            </h2>
+
+            <div class="options">
+
+                <button class="option"></button>
+                <button class="option"></button>
+                <button class="option"></button>
+                <button class="option"></button>
+
+            </div>
+
+            <button id="nextBtn">Next Question →</button>
+
+        </div>
+
+    </div>
+
+    <!-- Result Screen -->
+    <div class="result hide">
+
+        <img src="trophy.png" alt="Trophy">
+
+        <h1>Quiz Completed 🎉</h1>
+
+        <h2>Your Score</h2>
+
+        <h3>
+            <span id="finalScore">0</span>
+            /
+            <span id="totalScore">10</span>
+        </h3>
+
+        <button id="restartBtn">
+            Restart Quiz
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
