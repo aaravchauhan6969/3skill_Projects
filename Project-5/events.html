@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | EventHub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>EventHub</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="nav-btns">
+                <button class="login-btn"
+                    onclick="window.location.href='login.html'">
+                    Login
+                </button>
+
+                <button class="register-btn"
+                    onclick="window.location.href='register.html'">
+                    Register
+                </button>
+            </div>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="events-hero">
+
+        <h1>Explore Events</h1>
+
+        <p>
+            Discover concerts, workshops, hackathons,
+            sports events, food festivals and much more.
+        </p>
+
+    </section>
+
+    <!-- ================= FILTER SECTION ================= -->
+
+    <section class="filter-section">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search events...">
+
+        </div>
+
+        <select id="categoryFilter">
+
+            <option value="All">All Categories</option>
+
+            <option>Music</option>
+
+            <option>Technology</option>
+
+            <option>Food</option>
+
+            <option>Sports</option>
+
+            <option>Business</option>
+
+        </select>
+
+        <select id="locationFilter">
+
+            <option value="All">All Locations</option>
+
+            <option>Delhi</option>
+
+            <option>Mumbai</option>
+
+            <option>Bengaluru</option>
+
+            <option>Noida</option>
+
+            <option>Jaipur</option>
+
+        </select>
+
+    </section>
+
+    <!-- ================= EVENTS GRID ================= -->
+
+    <section class="events-page">
+
+        <div id="eventsContainer" class="events-grid">
+
+            <!-- Dynamic Cards -->
+
+        </div>
+
+        <div id="noEvents" class="no-events">
+
+            <i class="fa-solid fa-calendar-xmark"></i>
+
+            <h2>No Events Found</h2>
+
+            <p>Try changing your search or filters.</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>EventHub</h2>
+
+                <p>
+                    Your one-stop destination to discover
+                    and book amazing events.
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="#">Categories</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2026 EventHub. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/events.js"></script>
+
+</body>
+
+</html>

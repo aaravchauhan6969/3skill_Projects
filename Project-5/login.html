@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | EventHub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>EventHub</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="nav-btns">
+                <button class="login-btn">Login</button>
+                <button class="register-btn"
+                    onclick="window.location.href='register.html'">
+                    Register
+                </button>
+            </div>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= LOGIN ================= -->
+
+    <section class="auth-section">
+
+        <div class="auth-container">
+
+            <div class="auth-left">
+
+                <h1>Welcome Back 👋</h1>
+
+                <p>
+                    Login to manage your bookings, discover
+                    exciting events and never miss an opportunity.
+                </p>
+
+                <img src="images/login.png" alt="Login Illustration">
+
+            </div>
+
+            <div class="auth-right">
+
+                <h2>Login</h2>
+
+                <form id="loginForm">
+
+                    <div class="input-box">
+
+                        <label>Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required>
+
+                    </div>
+
+                    <div class="remember">
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Remember Me
+
+                        </label>
+
+                        <a href="#">Forgot Password?</a>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="auth-btn">
+
+                        Login
+
+                    </button>
+
+                </form>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <div class="social-login">
+
+                    <button class="google-btn">
+                        <i class="fa-brands fa-google"></i>
+                        Continue with Google
+                    </button>
+
+                    <button class="github-btn">
+                        <i class="fa-brands fa-github"></i>
+                        Continue with GitHub
+                    </button>
+
+                </div>
+
+                <p class="bottom-text">
+
+                    Don't have an account?
+
+                    <a href="register.html">
+                        Register Here
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+
+    <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

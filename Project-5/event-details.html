@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Details | EventHub</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span>EventHub</span>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="events.html">Events</a></li>
+
+                <li><a href="my-bookings.html">My Bookings</a></li>
+
+                <li><a href="profile.html">Profile</a></li>
+
+            </ul>
+
+            <div class="nav-btns">
+
+                <button class="login-btn"
+                    onclick="window.location.href='login.html'">
+
+                    Login
+
+                </button>
+
+                <button class="register-btn"
+                    onclick="window.location.href='register.html'">
+
+                    Register
+
+                </button>
+
+            </div>
+
+            <div class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= EVENT DETAILS ================= -->
+
+    <section class="details-section">
+
+        <div class="details-container">
+
+            <!-- Left -->
+
+            <div class="details-image">
+
+                <img
+                    id="eventImage"
+                    src="images/event1.jpg"
+                    alt="Event">
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="details-content">
+
+                <span class="details-category"
+                    id="eventCategory">
+
+                    Music
+
+                </span>
+
+                <h1 id="eventTitle">
+
+                    Sunburn Music Festival
+
+                </h1>
+
+                <p
+                    class="details-description"
+                    id="eventDescription">
+
+                    Experience India's biggest electronic music
+                    festival with world-famous DJs.
+
+                </p>
+
+                <div class="details-info">
+
+                    <p>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span id="eventLocation">
+
+                            Delhi
+
+                        </span>
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-solid fa-calendar"></i>
+
+                        <span id="eventDate">
+
+                            20 July 2026
+
+                        </span>
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <span id="eventTime">
+
+                            7:00 PM
+
+                        </span>
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-solid fa-user-group"></i>
+
+                        Organizer :
+
+                        <span id="eventOrganizer">
+
+                            EventHub Team
+
+                        </span>
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-solid fa-chair"></i>
+
+                        Seats Left :
+
+                        <span id="eventSeats">
+
+                            120
+
+                        </span>
+
+                    </p>
+
+                </div>
+
+                <div class="price-box">
+
+                    ₹ <span id="eventPrice">
+
+                        999
+
+                    </span>
+
+                </div>
+
+                <button
+                    class="book-btn"
+                    onclick="goToBooking()">
+
+                    <i class="fa-solid fa-ticket"></i>
+
+                    Book Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>EventHub</h2>
+
+                <p>
+
+                    Discover and book amazing events across India.
+
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="events.html">Events</a>
+
+                <a href="my-bookings.html">My Bookings</a>
+
+                <a href="profile.html">Profile</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <i class="fab fa-facebook"></i>
+
+                    <i class="fab fa-instagram"></i>
+
+                    <i class="fab fa-x-twitter"></i>
+
+                    <i class="fab fa-linkedin"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2026 EventHub. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+
+    <script src="js/script.js"></script>
+
+    <script src="js/auth.js"></script>
+
+    <script src="js/data.js"></script>
+
+    <script src="js/booking.js"></script>
+
+</body>
+
+</html>
