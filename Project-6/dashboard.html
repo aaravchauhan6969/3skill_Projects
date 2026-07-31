@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | EstateHub</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="loader">
+
+<div class="loader-box">
+
+<div class="loader-circle"></div>
+
+<h2>EstateHub</h2>
+
+<p>Loading Dashboard...</p>
+
+</div>
+
+</div>
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+🏠 EstateHub
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="properties.html">Properties</a></li>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="agents.html">Agents</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<button class="menu-btn">
+☰
+</button>
+
+<button id="themeToggle" class="theme-btn">
+🌙
+</button>
+
+</nav>
+
+</header>
+
+<section class="dashboard">
+
+<h1>Admin Dashboard</h1>
+
+<p>Manage your properties efficiently.</p>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h2 id="totalProperties">0</h2>
+
+<p>Total Properties</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="availableProperties">0</h2>
+
+<p>Available</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="soldProperties">0</h2>
+
+<p>Sold</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="totalAgents">0</h2>
+
+<p>Agents</p>
+
+</div>
+
+
+</div>
+<section class="dashboard-charts">
+
+<div class="chart-card">
+
+<h2>System Analytics</h2>
+
+<canvas id="analyticsChart"></canvas>
+
+</div>
+
+<div class="chart-card">
+
+<h2>Property Types</h2>
+
+<canvas id="propertyChart"></canvas>
+
+</div>
+
+</section>
+
+<section class="activity-section">
+
+<h2>Recent Activity</h2>
+
+<ul id="activityList">
+
+<li>🏠 Luxury Villa Added</li>
+
+<li>👨 Rahul Sharma Joined</li>
+
+<li>📨 New Customer Enquiry</li>
+
+<li>🏡 Apartment Sold</li>
+
+</ul>
+
+</section>
+<section class="quick-actions">
+
+<h2>Quick Actions</h2>
+
+<div class="action-grid">
+
+<div class="action-card">
+
+<span>🏠</span>
+
+<h3>Manage Properties</h3>
+
+<p>Add, edit or remove property listings.</p>
+
+<button onclick="location.href='properties.html'">
+Open
+</button>
+
+</div>
+
+<div class="action-card">
+
+<span>👨‍💼</span>
+
+<h3>Agents</h3>
+
+<p>View all registered real estate agents.</p>
+
+<button onclick="location.href='agents.html'">
+Open
+</button>
+
+</div>
+
+<div class="action-card">
+
+<span>📞</span>
+
+<h3>Enquiries</h3>
+
+<p>Check customer enquiries.</p>
+
+<button>
+Open
+</button>
+
+</div>
+
+<div class="action-card">
+
+<span>📈</span>
+
+<h3>Reports</h3>
+
+<p>View business statistics.</p>
+
+<button onclick="location.href='enquiries.html'">
+Open
+</button>
+
+</div>
+
+</div>
+
+</section>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/properties.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>

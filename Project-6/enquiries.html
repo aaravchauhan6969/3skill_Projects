@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Enquiries | EstateHub</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="loader">
+
+<div class="loader-box">
+
+<div class="loader-circle"></div>
+
+<h2>EstateHub</h2>
+
+<p>Loading Dashboard...</p>
+
+</div>
+
+</div>
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+🏠 EstateHub
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="properties.html">Properties</a></li>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="agents.html">Agents</a></li>
+
+<li><a href="enquiries.html" class="active">Enquiries</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<button class="menu-btn">☰</button>
+
+<button id="themeToggle" class="theme-btn">🌙</button>
+
+</nav>
+
+</header>
+
+<section class="agents-page">
+
+<h1>Customer Enquiries</h1>
+
+<p>Manage customer property enquiries.</p>
+
+<div class="agent-controls">
+
+<input
+type="text"
+id="searchEnquiry"
+placeholder="Search by customer name...">
+
+<button id="addEnquiryBtn">
+
++ New Enquiry
+
+</button>
+
+</div>
+
+<div
+id="enquiryContainer"
+class="agent-grid">
+
+</div>
+<!-- ==========================
+     ADD ENQUIRY MODAL
+========================== -->
+
+<div class="modal" id="enquiryModal">
+
+<div class="modal-content form-modal">
+
+<span class="close-enquiry">&times;</span>
+
+<h2>New Enquiry</h2>
+
+<form id="enquiryForm">
+
+<input
+type="text"
+id="customerName"
+placeholder="Customer Name"
+required>
+
+<input
+type="tel"
+id="customerPhone"
+placeholder="Phone Number"
+required>
+
+<input
+type="email"
+id="customerEmail"
+placeholder="Email"
+required>
+
+<input
+type="text"
+id="propertyInterested"
+placeholder="Interested Property"
+required>
+
+<select id="customerStatus">
+
+<option>New</option>
+
+<option>Contacted</option>
+
+<option>Closed</option>
+
+</select>
+
+<button type="submit">
+
+Add Enquiry
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- ==========================
+     VIEW ENQUIRY MODAL
+========================== -->
+
+<div class="modal" id="viewEnquiryModal">
+
+<div class="modal-content">
+
+<span class="close-view">&times;</span>
+
+<h2 id="viewName"></h2>
+
+<p id="viewPhone"></p>
+
+<p id="viewEmail"></p>
+
+<p id="viewProperty"></p>
+
+<p id="viewDate"></p>
+
+<p id="viewStatus"></p>
+
+<button
+class="primary-btn"
+id="closeView">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+</section>
+
+<script src="js/app.js"></script>
+
+<script src="js/enquiries.js"></script>
+
+</body>
+
+</html>

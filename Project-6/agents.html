@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Agents | EstateHub</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+<div id="loader">
+
+<div class="loader-box">
+
+<div class="loader-circle"></div>
+
+<h2>EstateHub</h2>
+
+<p>Loading Dashboard...</p>
+
+</div>
+
+</div>
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+🏠 EstateHub
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="properties.html">Properties</a></li>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="agents.html">Agents</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<button class="menu-btn">
+
+☰
+
+</button>
+
+<button id="themeToggle"
+class="theme-btn">
+
+🌙
+
+</button>
+
+</nav>
+
+</header>
+
+<section class="agents-page">
+
+<h1>Our Agents</h1>
+
+<p>
+
+Meet our professional real estate team.
+
+</p>
+
+<div class="agent-controls">
+
+<input
+type="text"
+id="agentSearch"
+placeholder="Search Agent...">
+
+<button id="addAgentBtn">
+
++ Add Agent
+
+</button>
+
+</div>
+
+<div id="agentContainer"
+class="agent-grid">
+
+</div>
+<!-- ==========================
+     ADD AGENT MODAL
+========================== -->
+
+<div class="modal" id="agentModal">
+
+    <div class="modal-content form-modal">
+
+        <span class="close-agent">&times;</span>
+
+        <h2>Add New Agent</h2>
+
+        <form id="agentForm">
+
+            <input
+                type="text"
+                id="agentName"
+                placeholder="Agent Name"
+                required>
+
+            <input
+                type="text"
+                id="agentExperience"
+                placeholder="Experience (e.g. 5 Years)"
+                required>
+
+            <input
+                type="tel"
+                id="agentPhone"
+                placeholder="Phone Number"
+                required>
+
+            <input
+                type="email"
+                id="agentEmail"
+                placeholder="Email Address"
+                required>
+
+            <input
+                type="text"
+                id="agentImage"
+                placeholder="Profile Image URL (Optional)">
+
+            <button type="submit">
+                Add Agent
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+<!-- AGENT PROFILE MODAL -->
+
+<div class="modal" id="profileModal">
+
+<div class="modal-content">
+
+<span class="close-profile">
+
+&times;
+
+</span>
+
+<img
+id="profileImage"
+src="">
+
+<h2 id="profileName"></h2>
+
+<p id="profileExperience"></p>
+
+<p id="profilePhone"></p>
+
+<p id="profileEmail"></p>
+
+<button
+class="primary-btn"
+id="closeProfile">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+</section>
+
+<script src="js/app.js"></script>
+
+<script src="js/agents.js"></script>
+
+</body>
+
+</html>
